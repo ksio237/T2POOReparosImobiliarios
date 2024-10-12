@@ -1,0 +1,26 @@
+1. Abstract Cliente (int id; String nome, endereço, telefone;)
+	1.1. Pessoa Jurídica (String cnpj)
+	1.2. Pessoa Física (String cpf)
+2. Imovel (int id; String endereço, complemento; Cliente cliente)
+3. Prestador (int id; String nome;)
+4. Interface Reparos (void valor(), boolean concluirReparos())
+5. Interface Materias (void valor(), boolean comprarMateriais())
+6. Abstract Servico(int id, Cliente cliente, Imovel imóvel, Double valorTotal, adicionar detalhe()) implements Reparos, Materiais
+	6.1. Pintura (Prestador prestador, String detalhes, Double valor, adicionar detalhe())
+	6.2. Encanamento (Prestador prestador, String detalhes, Double valor, adicionar detalhe())
+	6.3. Eletrica (Prestador prestador, String detalhes, Double valor, adicionar detalhe())
+	6.4. Limpeza (Prestador prestador, String detalhes, Double valor, adicionar detalhe())
+	6.5. Outro (String tipo, Prestador prestador, String detalhes, Double valor, adicionar detalhe())
+7. Orcamento (int id; Cliente cliente; Imovel imóvel; ArrayList itensOrcamentos; Double valorTotal, boolean autorizado)
+8. ItensOrcamento(Servico tipo; Integer quantidade; Double valor)
+9. Financeiro (int id, Cliente cliente, Orcamento orçamento, boolean pago)
+
+// Fazer comentários em praticamento todos métodos
+
+Sistema (instanciar classse em ArrayList: Cliente, Imovel, Prestador,
+Orcamento, Servico; métodos: cadastrarServiço(sobrecarga com objeto),
+cadastra (restante), listar,
+
+MainMenu (menu para chamar funções do Sistemas)
+
+//Assim fica fácil no mesmo projeto gerar um Jframe para fazer o front no trabalho3
