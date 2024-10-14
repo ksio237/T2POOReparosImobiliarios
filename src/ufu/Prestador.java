@@ -3,12 +3,12 @@ package ufu;
 public class Prestador {
 	private int id;
 	private static int contador = 300;
-	private String nome, servico; //Penso em relacionar o prestador a um serviço mas nao implementarei isso, complicado e regra de negocio
+	private String nome, funcao;
 	
-	public Prestador(int id, String nome, String servico) {
+	public Prestador(String nome, String funcao) {
 		this.id = contador++;
 		this.nome = nome;
-		this.servico = servico;
+		this.funcao = funcao;
 	}
 
 	public String getNome() {
@@ -19,12 +19,12 @@ public class Prestador {
 		this.nome = nome;
 	}
 
-	public String getServico() {
-		return servico;
+	public String getFuncao() {
+		return funcao;
 	}
 
-	public void setServico(String servico) {
-		this.servico = servico;
+	public void setFuncao(String funcao) {
+		this.funcao = funcao;
 	}
 
 	public int getId() {

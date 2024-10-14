@@ -41,6 +41,8 @@ public abstract class Cliente {
 		this.telefone = telefone;
 	}
 	
-	abstract boolean validar(String valor);
+	abstract boolean validar(String valor); 
+	
+	abstract String getDado(); //Metodo abstrato nao para obrigar e sim para facilitar o acesso a um atributo da classe filha
 
 }

@@ -6,7 +6,7 @@ public class Imovel {
 	private String endereco;
 	private Cliente cliente; //Relaciono um cliente a o imovel sempre, regra de negocio
 	
-	public Imovel(int id, String endereco, Cliente cliente) {
+	public Imovel(String endereco, Cliente cliente) {
 		this.id = contador++;
 		this.endereco = endereco;
 		this.cliente = cliente;
