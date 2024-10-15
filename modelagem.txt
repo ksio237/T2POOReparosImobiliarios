@@ -5,12 +5,8 @@
 3. Prestador (int id; String nome;)
 4. Interface Reparos (void valor(), boolean concluirReparos())
 5. Interface Materias (void valor(), boolean comprarMateriais())
-6. Abstract Servico(int id, Cliente cliente, Imovel imóvel, Double valorTotal, adicionar detalhe()) implements Reparos, Materiais
-	6.1. Pintura (Prestador prestador, String detalhes, Double valor, adicionar detalhe())
-	6.2. Encanamento (Prestador prestador, String detalhes, Double valor, adicionar detalhe())
-	6.3. Eletrica (Prestador prestador, String detalhes, Double valor, adicionar detalhe())
-	6.4. Limpeza (Prestador prestador, String detalhes, Double valor, adicionar detalhe())
-	6.5. Outro (String tipo, Prestador prestador, String detalhes, Double valor, adicionar detalhe())
+6. Materiais (String nome, int quantidade, double valor)
+6. Servico(int id, Cliente cliente, Imovel imóvel, Double valorTotal, adicionar detalhe()) implements Reparos, Materiais
 7. Orcamento (int id; Cliente cliente; Imovel imóvel; ArrayList itensOrcamentos; Double valorTotal, boolean autorizado)
 8. ItensOrcamento(Servico tipo; Integer quantidade; Double valor)
 9. Financeiro (int id, Cliente cliente, Orcamento orçamento, boolean pago)
